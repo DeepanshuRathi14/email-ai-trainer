@@ -1,0 +1,11 @@
+[project]
+name = "email-ai-trainer"
+version = "0.1.0"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "openenv>=0.2.0"
+]
+
+[project.scripts]
+server = "server.app:app"
