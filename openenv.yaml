@@ -1,0 +1,22 @@
+name: advanced-email-ai-env
+description: Multi-step AI email triage system
+
+observation_space:
+  email: string
+  task: string
+  step: integer
+
+action_space:
+  response: string
+
+reward:
+  type: float
+  range: [0.0, 1.0]
+
+tasks:
+  - name: easy
+    description: classification
+  - name: medium
+    description: priority assignment
+  - name: hard
+    description: full response generation
